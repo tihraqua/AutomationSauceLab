@@ -1,0 +1,24 @@
+[INFO ] 2024-07-19 12:22:09.765 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-19 12:22:21.958 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-19 12:24:30.085 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-19 12:24:30.127 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-19 12:24:35.475 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-19 12:24:37.043 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-19 12:24:37.127 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-19 12:24:37.660 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-19 12:24:37.674 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-19 12:24:38.174 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-19 12:24:38.174 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-19 12:24:38.700 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-19 12:24:38.700 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-19 12:24:38.733 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-19 12:24:38.737 [main] Log - I am on onTestStat method brokenLinkCheck2
+[INFO ] 2024-07-19 12:24:38.748 [main] Log - I am on onTestSuccess method: brokenLinkCheck2
+[INFO ] 2024-07-19 12:24:38.753 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-19 12:24:39.011 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-19 12:24:40.669 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-19 12:24:46.125 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-19 12:24:46.151 [main] Log - I am on onTestStat method brokenLinkCheck2
+[INFO ] 2024-07-19 12:24:47.793 [main] Log - I am on onTestSuccess method: brokenLinkCheck2
+[INFO ] 2024-07-19 12:24:47.793 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-19 12:24:48.084 [main] Log - I am on onFinish method: Testing Annotations Test

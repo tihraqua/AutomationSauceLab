@@ -1,0 +1,132 @@
+[INFO ] 2024-07-15 16:54:13.702 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 16:54:29.079 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 16:54:50.620 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 16:55:00.228 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 16:56:38.164 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 16:56:46.404 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 16:57:15.520 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 16:57:15.580 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 16:57:18.675 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 16:57:20.123 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 16:57:20.127 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 16:57:20.724 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 16:57:20.725 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 16:57:21.310 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 16:57:21.312 [main] Log - I am on onTestFailure method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 16:57:21.334 [main] Log - I am on onStart method: Command line test
+[INFO ] 2024-07-15 16:57:21.335 [main] Log - I am on onFinish method: Command line test
+[INFO ] 2024-07-15 16:57:21.463 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 16:57:22.223 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 16:57:22.225 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 16:57:22.887 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 16:57:22.889 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 16:57:23.147 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 21:20:50.394 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 21:20:50.423 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 21:20:54.808 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:20:56.960 [main] Log - I am on onTestSkipped method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:20:56.961 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:20:57.066 [main] Log - I am on onTestSkipped method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:20:57.070 [main] Log - I am on onTestFailure method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:20:57.189 [main] Log - I am on onStart method: Command line test
+[INFO ] 2024-07-15 21:20:57.190 [main] Log - I am on onFinish method: Command line test
+[INFO ] 2024-07-15 21:20:57.536 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:20:57.691 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:20:57.694 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:20:57.850 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:20:57.850 [main] Log - I am on onTestFailure method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:20:57.850 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:20:58.003 [main] Log - I am on onTestSkipped method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:20:58.005 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:20:58.147 [main] Log - I am on onTestSkipped method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:20:58.147 [main] Log - I am on onTestFailure method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:20:58.164 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:20:58.214 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:20:58.214 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:20:58.359 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:20:58.360 [main] Log - I am on onTestFailure method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:20:58.362 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 21:20:58.480 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 21:20:58.482 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 21:20:58.770 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 21:21:57.840 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 21:21:57.881 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 21:22:11.287 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:22:13.205 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:22:13.210 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:22:13.679 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:22:13.681 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:22:14.171 [main] Log - I am on onTestSkipped method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:22:14.171 [main] Log - I am on onTestFailure method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:22:14.188 [main] Log - I am on onStart method: Command line test
+[INFO ] 2024-07-15 21:22:14.189 [main] Log - I am on onFinish method: Command line test
+[INFO ] 2024-07-15 21:22:14.268 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:22:14.792 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:22:14.793 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:22:15.326 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:22:15.327 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 21:22:15.343 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 21:22:15.344 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 21:22:15.584 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 21:23:37.521 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 21:23:37.552 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 21:23:40.803 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:23:44.085 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:23:44.088 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:23:44.615 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:23:44.615 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:23:45.054 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:23:45.054 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:23:45.542 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:23:45.543 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 21:23:45.551 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 21:23:45.561 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 21:23:45.781 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 21:31:14.002 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 21:31:14.033 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 21:31:16.357 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:31:17.961 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:31:17.963 [main] Log - I am on onTestStat method swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 21:31:17.977 [main] Log - I am on onTestSuccess method: swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 21:31:17.978 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:31:18.544 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:31:18.546 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:31:18.995 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:31:18.996 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:31:19.584 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:31:19.585 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 21:31:19.595 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 21:31:19.596 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 21:31:19.852 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 21:31:48.040 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 21:31:48.075 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 21:31:50.543 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:31:52.115 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 21:31:52.118 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:31:52.651 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 21:31:52.653 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:31:53.090 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 21:31:53.091 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:31:53.575 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 21:31:53.576 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 21:31:53.590 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 21:31:53.591 [main] Log - I am on onTestStat method swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 21:31:53.601 [main] Log - I am on onTestSuccess method: swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 21:31:53.602 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 21:31:53.837 [main] Log - I am on onFinish method: Testing Annotations Test
+[INFO ] 2024-07-15 22:28:58.539 [main] Log - I am on onStart method: Testing Annotations Test
+[INFO ] 2024-07-15 22:28:58.580 [main] Log - ************************* Test is stating ****************************
+[INFO ] 2024-07-15 22:29:03.421 [main] Log - I am on onTestStat method invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 22:29:05.070 [main] Log - I am on onTestSuccess method: invalidLoginTest_InvalidUserValidPassword
+[INFO ] 2024-07-15 22:29:05.170 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 22:29:05.735 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserInvalidPassword
+[INFO ] 2024-07-15 22:29:05.739 [main] Log - I am on onTestStat method invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 22:29:06.176 [main] Log - I am on onTestSuccess method: invalidLoginTest_NullUserValidPassword
+[INFO ] 2024-07-15 22:29:06.180 [main] Log - I am on onTestStat method invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 22:29:06.776 [main] Log - I am on onTestSuccess method: invalidLoginTest_ValidUserNullPassword
+[INFO ] 2024-07-15 22:29:06.780 [main] Log - I am on onTestStat method brokenLinkCheck
+[INFO ] 2024-07-15 22:29:06.797 [main] Log - I am on onTestSuccess method: brokenLinkCheck
+[INFO ] 2024-07-15 22:29:06.800 [main] Log - I am on onTestStat method swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 22:29:06.810 [main] Log - I am on onTestSuccess method: swTestAcademyHomePageBrokenLinksTest2
+[INFO ] 2024-07-15 22:29:06.814 [main] Log - ********************* The test is finishin **********************
+[INFO ] 2024-07-15 22:29:07.038 [main] Log - I am on onFinish method: Testing Annotations Test
