@@ -20,10 +20,9 @@ public class Listener extends BaseTest implements ITestListener {
     private static final int maxRetry = 1;
 
 
-    @Attachment(value = "Page Screenshots", type = "image/png", fileExtension = ".png")
+    @Attachment(value = "Page Screenshots", type = "image/bmp", fileExtension = ".bmp")
     public byte[] saveScreenShotPNG(WebDriver driver){
          byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        Allure.addAttachment("Test", Arrays.toString(screenshot));
         return screenshot;
     }
 
@@ -47,23 +46,28 @@ public void onFinish(ITestContext iTestContext){
 
         Log.info("I am on onTestSuccess method: " + iTestResult.getName());
 
+
+
+
     }
 
     public void onTestFailure(ITestResult iTestResult){
         Object testclass = iTestResult.getInstance();
         WebDriver driver = ((BaseTest) testclass).getDriver();
         Log.info("I am on onTestFailure method: " + iTestResult.getName());
-            System.out.printf("Screeshot captured for test cases: " + getMethodName(iTestResult));
-            saveScreenShotPNG(driver);
-        saveTextLog(getMethodName(iTestResult) + "Test case failed and screenshot taken");
-       if(count < maxRetry) {
-           count++;
-           TestNG testNG = new TestNG();
-           Class[] classes = {iTestResult.getClass()};
-           testNG.setTestClasses(classes);
-           testNG.addListener(new Listener());
-           testNG.run();
-       }
+        System.out.printf("Screeshot captured for test cases: " + getMethodName(iTestResult));
+        saveScreenShotPNG(driver);
+        saveTextLog(getMethodName(iTestResult) + "Failed and screenshot taken");
+        Log.info("I am on onTestStat method " + iTestResult.getMethod().getConstructorOrMethod().getName());
+        //saveTextLog(getMethodName(iTestResult) + "Test case failed and screenshot taken");
+//       if(count < maxRetry) {
+//           count++;
+//           TestNG testNG = new TestNG();
+//           Class[] classes = {iTestResult.getClass()};
+//           testNG.setTestClasses(classes);
+//           testNG.addListener(new Listener());
+//           testNG.run();
+
 
 
 
@@ -78,7 +82,10 @@ public void onFinish(ITestContext iTestContext){
 
     }
     public void onTestStart(ITestResult iTestResult){
-        Log.info("I am on onTestStat method " + iTestResult.getMethod().getConstructorOrMethod().getName());
+
+    }
+    public void afterInvocation(ITestResult iTestResult){
+
     }
 
 

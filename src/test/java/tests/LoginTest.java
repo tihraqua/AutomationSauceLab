@@ -33,6 +33,7 @@ public class LoginTest extends BaseTest {
 
 
     @Step("Test test test")
+    @Attachment
     @Description("TC01_Verify Login using invalid user and valid password")
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 0, description = "Test case 1")

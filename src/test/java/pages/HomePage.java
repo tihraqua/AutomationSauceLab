@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import utilities.ExcelUtils;
 
@@ -10,6 +11,7 @@ public class HomePage extends BasePage{
     public HomePage(WebDriver webDriver) throws IOException {
         super(webDriver);
     }
+    @Step("Open the website")
     public  HomePage goToHomePage(){
         loginPage.login(ExcelUtils.getCell(4,0), ExcelUtils.getCell(4,1));
         return this;
