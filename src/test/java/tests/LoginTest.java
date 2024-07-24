@@ -1,11 +1,14 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utilities.ExcelUtils;
 import utilities.HttpConnection;
+import utilities.listeners.Listener;
 import utilities.listeners.Retry;
 
 import java.io.IOException;
@@ -15,6 +18,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
+@Listeners({ Listener.class })
+@Epic("Regression Tests")
+@Feature("Login Tests")
 public class LoginTest extends BaseTest {
     List<Integer> acceptedStatusCodeList = new ArrayList<>();
     Predicate<String> isStatusCodeOk = link -> {
@@ -26,6 +32,9 @@ public class LoginTest extends BaseTest {
 
 
 
+    @Step("Test test test")
+    @Description("TC01_Verify Login using invalid user and valid password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 0, description = "Test case 1")
     public void invalidLoginTest_InvalidUserValidPassword() throws IOException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -34,6 +43,9 @@ public class LoginTest extends BaseTest {
                .verifyLoginPassword(ExcelUtils.getCell(0,2))
                .verifyLoginUser(ExcelUtils.getCell(0,2));
     }
+    @Step("Test test test")
+    @Description("TC02_Verify Login using valid user and invalid password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 1, description = "Test case 2")
     public void invalidLoginTest_ValidUserInvalidPassword() throws IOException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -42,6 +54,8 @@ public class LoginTest extends BaseTest {
                 .verifyLoginPassword(ExcelUtils.getCell(1,2))
                 .verifyLoginUser(ExcelUtils.getCell(1,2));
     }
+    @Description("TC03_Verify Login using null user and valid password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 2, description = "Test case 3")
     public void invalidLoginTest_NullUserValidPassword() throws IOException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -50,6 +64,8 @@ public class LoginTest extends BaseTest {
                 .verifyLoginPassword(ExcelUtils.getCell(2,2))
                 .verifyLoginUser(ExcelUtils.getCell(2,2));
     }
+    @Description("TC04_Verify Login using valid user and null password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 3)
     public void invalidLoginTest_ValidUserNullPassword() throws IOException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -58,6 +74,8 @@ public class LoginTest extends BaseTest {
                 .verifyLoginPassword(ExcelUtils.getCell(3,2))
                 .verifyLoginUser(ExcelUtils.getCell(3,2));
     }
+    @Description("TC05_Verify broken links")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 4)
     public void brokenLinkCheck() {
         Collections.addAll(acceptedStatusCodeList, 200, 301, 302, 403);
@@ -82,6 +100,8 @@ public class LoginTest extends BaseTest {
         System.out.println("Count: " + count);
         Assert.assertFalse(count > 0);
     }
+    @Description("TC06_Verify broken links check 2")
+    @Severity(SeverityLevel.NORMAL)
     @Test(priority = 5)
     public void brokenLinkCheck2() {
         Collections.addAll(acceptedStatusCodeList, 200, 301, 302, 403);

@@ -21,7 +21,9 @@ import java.util.function.Predicate;
 
 public class BaseTest {
 
-    public  WebDriver webDriver;
+    public  static WebDriver webDriver;
+
+
 
     @BeforeClass
     public void setup() throws IOException {
@@ -43,11 +45,15 @@ public class BaseTest {
 
 
     }
+    public WebDriver getDriver(){
+        return webDriver;
+    }
     @AfterClass
-    public void tearDown(){
+    public static void tearDown(){
         Log.info("********************* The test is finishin **********************");
         webDriver.quit();
     }
+
 
 
 }

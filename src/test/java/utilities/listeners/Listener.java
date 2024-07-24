@@ -1,5 +1,10 @@
 package utilities.listeners;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -7,10 +12,26 @@ import org.testng.TestNG;
 import tests.BaseTest;
 import utilities.logs.Log;
 
+import java.io.File;
+import java.util.Arrays;
+
 public class Listener extends BaseTest implements ITestListener {
     private static int count =0;
     private static final int maxRetry = 1;
-    private static String getMethodName(ITestResult iTestResult){
+
+
+    @Attachment(value = "Page Screenshots", type = "image/png", fileExtension = ".png")
+    public byte[] saveScreenShotPNG(WebDriver driver){
+         byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        Allure.addAttachment("Test", Arrays.toString(screenshot));
+        return screenshot;
+    }
+
+    @Attachment(value = "{0}", type = "text/plain")
+    static String saveTextLog(String message){
+        return message;
+    }
+    public static String getMethodName(ITestResult iTestResult){
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
 public void onStart(ITestContext iTestContext){
@@ -23,27 +44,33 @@ public void onFinish(ITestContext iTestContext){
 
 }
     public void onTestSuccess(ITestResult iTestResult){
+
         Log.info("I am on onTestSuccess method: " + iTestResult.getName());
 
     }
 
     public void onTestFailure(ITestResult iTestResult){
-
+        Object testclass = iTestResult.getInstance();
+        WebDriver driver = ((BaseTest) testclass).getDriver();
         Log.info("I am on onTestFailure method: " + iTestResult.getName());
-        if(count < maxRetry){
-            count ++;
-            TestNG testNG = new TestNG();
-            Class[] classes = {iTestResult.getClass()};
-            testNG.setTestClasses(classes);
-            testNG.addListener(new Listener());
-            testNG.run();
-        }
+            System.out.printf("Screeshot captured for test cases: " + getMethodName(iTestResult));
+            saveScreenShotPNG(driver);
+        saveTextLog(getMethodName(iTestResult) + "Test case failed and screenshot taken");
+       if(count < maxRetry) {
+           count++;
+           TestNG testNG = new TestNG();
+           Class[] classes = {iTestResult.getClass()};
+           testNG.setTestClasses(classes);
+           testNG.addListener(new Listener());
+           testNG.run();
+       }
+
 
 
     }
     public void onTestSkipped(ITestResult iTestResult){
-        Log.info("I am on onTestSkipped method: " + iTestResult.getName());
-        iTestResult.setAttribute("webDriver", this.webDriver);
+        Log.info("I am on onTestSkipped method: " + getMethodName(iTestResult));
+       // iTestResult.setAttribute("webDriver", this.webDriver);
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult){
@@ -53,5 +80,6 @@ public void onFinish(ITestContext iTestContext){
     public void onTestStart(ITestResult iTestResult){
         Log.info("I am on onTestStat method " + iTestResult.getMethod().getConstructorOrMethod().getName());
     }
+
 
 }
