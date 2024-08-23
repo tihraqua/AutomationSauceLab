@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+## Logs and reports##
+.log
+.txt
+.json

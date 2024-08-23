@@ -20,7 +20,7 @@ public class LoginPage extends BasePage {
     By passwordfield = By.id("password");
     By loginBtn = By.id("login-button");
     By error = By.xpath("//h3[@data-test='error']");
-    //************** Page Functions ********************************
+    //************** Page Methods ********************************
     @Step("Go to Login")
     public LoginPage goToLogin(){
         webDriver.get(url);

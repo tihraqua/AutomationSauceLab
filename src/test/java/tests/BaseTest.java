@@ -2,8 +2,11 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -14,6 +17,7 @@ import utilities.HttpConnection;
 import utilities.logs.Log;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -40,7 +44,13 @@ public class BaseTest {
         }
         else if (ConfigReader.getInstance().getBrowser().equalsIgnoreCase("Firefox")){
             webDriver = new FirefoxDriver();
+        }
+        else if (ConfigReader.getInstance().getBrowser().equalsIgnoreCase("Remote")) {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            URL gridUrl = new URL("http://192.168.80.148:4444/");
+            webDriver = new RemoteWebDriver(gridUrl, chromeOptions);
         }else System.out.printf("******************************No Driver Found ***********************");
+
         webDriver.manage().window().maximize();
 
 
