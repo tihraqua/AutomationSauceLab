@@ -38,6 +38,6 @@ build/
 .DS_Store
 
 ## Logs and reports##
-.log
-.txt
-.json
+*.log
+*.txt
+*.json
